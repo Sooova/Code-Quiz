@@ -1,0 +1,116 @@
+.qButtons {
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:2rem;
+    border-radius: 40px;
+    padding: 35px;
+    letter-spacing: 1px;
+    margin: 10px;
+    margin-left:10px;
+    position: relative;
+    display: inline-block;
+    border-color:transparent;
+    text-decoration: none;
+    min-width: 400px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+#head {
+    display:flex;
+    justify-content: space-between;
+}
+
+.qButtons:hover {
+    animation: upDown 0.35s infinite alternate;
+    mix-blend-mode:screen;
+}
+
+#countdown {
+    text-align: right;
+    position: relative;
+
+}
+
+#score {
+    position: relative;
+    text-align: left;
+    display:inline;
+}
+
+@keyframes upDown {
+
+    to {
+        transform: translateY(-10px);
+    }
+ 
+}
+
+
+html {
+    background-color: rgb(32,35,48);
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+}
+
+#questionNumber {}
+
+.questionPane {
+    border-radius:20px;
+    border:5px solid;
+    border-color: rgb(94, 95, 95);
+    background-color: rgb(94, 95, 95);
+    fill-opacity: 50%;
+    padding: 20px;
+    margin: 50px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:3vw;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:4vw;
+    text-align: center;
+}
+
+#clickEventQ {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    border:5px solid;
+    border-color: rgb(94, 95, 95);
+    background-color: rgb(94, 95, 95);
+    fill-opacity: 50%;
+    padding: 50px;
+    margin: 50px;
+}
+
+
+body {
+    animation: popIn 1s linear;
+}
+
+@keyframes popIn {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
