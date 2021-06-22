@@ -18,5 +18,5 @@ window.onload= pushScore;
 clearButton = document.getElementById("clear");
 clearButton.addEventListener('click',(function(){
     localStorage.clear();
-    window.location.href = "highscores.html";
+    window.location.href = "index.html";
 }))
